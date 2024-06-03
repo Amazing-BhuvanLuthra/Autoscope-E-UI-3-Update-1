@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header, Footer, and FontAwesome Buttons</title>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles-settings.css">
+</head>
+<body id="body">
+
+<header>
+    <button class="go-back-button" onclick="history.back()">
+        <i class="fas fa-arrow-left"></i> Go Back
+    </button>
+    <h1>Camera Settings</h1>
+</header>
+
+<div class="content">
+    <div class="button-container">
+        <button class="fa-button">
+            <!-- <i class="fas fa-home"></i> -->
+            DRC Strength
+        </button>
+        <button class="fa-button">
+            <!-- <i class="fas fa-user"></i> -->
+            Flash Mode
+        </button>
+        <button class="fa-button">
+            <!-- <i class="fas fa-envelope"></i> -->
+            Image Effect
+        </button>
+        <button class="fa-button">
+            <!-- <i class="fas fa-cog"></i> -->
+            Image Flip
+        </button>
+        <!-- <button class="fa-button">
+            <i class="fas fa-bell"></i>
+            Notifications
+        </button>
+        <button class="fa-button">
+            <i class="fas fa-question-circle"></i>
+            Help
+        </button>
+        <button class="fa-button">
+            <i class="fas fa-sign-out-alt"></i>
+            Logout
+        </button>
+        <button class="fa-button">
+            <i class="fas fa-trash-alt"></i>
+            Delete
+        </button> -->
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">Image Contrast
+          </div>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">Image Sharpness
+          </div>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">Image ISO
+          </div>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">Livestream frame rate
+          </div>
+    </div>
+</div>
+
+<footer>
+    <p>Autoscope E</p>
+</footer>
+
+</body>
+</html>
